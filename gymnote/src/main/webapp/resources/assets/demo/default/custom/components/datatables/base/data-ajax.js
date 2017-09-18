@@ -12,7 +12,7 @@ var DatatableRemoteAjaxDemo = function () {
 				type: 'remote',
 				source: {
 					read: {
-						url: 'boardList.jsp'
+						url: 'http://keenthemes.com/metronic/preview/inc/api/datatables/demos/default.php'
 					}
 				},
 				pageSize: 10,
@@ -59,7 +59,7 @@ var DatatableRemoteAjaxDemo = function () {
 				template: '{{OrderID}} - {{ShipCountry}}'
 			}, {
 				field: "ShipCountry",
-				title: "Ship Country",
+				title: "dera!",
 				width: 150,
 				template: function (row) {
 					// callback function support for column rendering
