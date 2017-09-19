@@ -6,6 +6,7 @@ import javax.annotation.Resource;
 
 import org.junit.runner.Request;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -37,8 +38,13 @@ public class GymController {
 	//로그인
 	@RequestMapping(value="userLogin")
 	@ResponseBody
-	public String uLogin(String email,String password){
-		String pwd=uservice.uLogin(email);		
+	public String uLogin(Model model,String email,String password){
+		String pwd=uservice.uLogin(email);
+		
+		int num=uservice.uLoginnum(email);
+		
+		model.addAttribute("num",num);
+		
 		String flag="false";
 		
 		if(password.equals(pwd)){
@@ -82,6 +88,7 @@ public class GymController {
 	public void profile(){		
 	}
 	
+	//게시판 글쓰기
 	@RequestMapping(value="insert_freeboard", method=RequestMethod.POST)
 	public String fbinsert(FreeBoardDTO fdto){
 		uservice.fbinsert(fdto);		

@@ -90,9 +90,11 @@ var SnippetLogin = function() {
                 type:"post",
             	url: 'userLogin',
             	data:{},
-                success: function(data) { //컨트롤러에서 다시 이리로 들어오지가 않는다... ㅠㅠ
+                success: function(data) { //뭐야 js에서 이거 어떻게 넘길까...
                 	if(data=="true"){
-                		location.href="index";
+                		alert("123");
+                		alert("${num}");
+                		location.href="index?num="+${num};
                 	}
                 	// similate 2s delay
                 	setTimeout(function() {

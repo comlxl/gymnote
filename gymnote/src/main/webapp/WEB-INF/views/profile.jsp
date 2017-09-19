@@ -299,7 +299,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 									<div class="tab-content">
 										<div class="tab-pane active" id="m_user_profile_tab_1">
-											<form class="m-form m-form--fit m-form--label-align-right">
+											<form class="m-form m-form--fit m-form--label-align-right" action="userprofile">
 												<div class="m-portlet__body">
 													<div class="form-group m-form__group m--margin-top-10 m--hide">
 														<div class="alert m-alert m-alert--default" role="alert">
@@ -326,7 +326,7 @@ License: You must have a valid license purchased only from themeforest(the above
 															직업
 														</label>
 														<div class="col-7">
-															<input class="form-control m-input" type="text" value="CTO">
+															<input class="form-control m-input" type="text" value="" placeholder="직업을 입력해주세요">
 														</div>
 													</div>
 													<div class="form-group m-form__group row">
@@ -334,7 +334,7 @@ License: You must have a valid license purchased only from themeforest(the above
 															번호
 														</label>
 														<div class="col-7">
-															<input class="form-control m-input" type="text" value="+456669067890">
+															<input class="form-control m-input" type="text" value="" placeholder="휴대폰 번호를 입력해주세요">
 														</div>
 													</div>
 													<div class="m-form__seperator m-form__seperator--dashed m-form__seperator--space-2x"></div>
@@ -347,74 +347,26 @@ License: You must have a valid license purchased only from themeforest(the above
 													</div>
 													<div class="form-group m-form__group row">
 														<label for="example-text-input" class="col-2 col-form-label">
-															주소
+															우편번호
 														</label>
 														<div class="col-7">
-															<input class="form-control m-input" type="text" value="L-12-20 Vertex, Cybersquare">
+															<input class="form-control m-input" type="text">
 														</div>
 													</div>
 													<div class="form-group m-form__group row">
 														<label for="example-text-input" class="col-2 col-form-label">
-															City
+															상세주소
 														</label>
 														<div class="col-7">
-															<input class="form-control m-input" type="text" value="San Francisco">
+															<input class="form-control m-input" type="text" >
 														</div>
 													</div>
 													<div class="form-group m-form__group row">
 														<label for="example-text-input" class="col-2 col-form-label">
-															State
+															
 														</label>
 														<div class="col-7">
-															<input class="form-control m-input" type="text" value="California">
-														</div>
-													</div>
-													<div class="form-group m-form__group row">
-														<label for="example-text-input" class="col-2 col-form-label">
-															Postcode
-														</label>
-														<div class="col-7">
-															<input class="form-control m-input" type="text" value="45000">
-														</div>
-													</div>
-													<div class="m-form__seperator m-form__seperator--dashed m-form__seperator--space-2x"></div>
-													<div class="form-group m-form__group row">
-														<div class="col-10 ml-auto">
-															<h3 class="m-form__section">
-																3. Social Links
-															</h3>
-														</div>
-													</div>
-													<div class="form-group m-form__group row">
-														<label for="example-text-input" class="col-2 col-form-label">
-															Linkedin
-														</label>
-														<div class="col-7">
-															<input class="form-control m-input" type="text" value="www.linkedin.com/Mark.Andre">
-														</div>
-													</div>
-													<div class="form-group m-form__group row">
-														<label for="example-text-input" class="col-2 col-form-label">
-															Facebook
-														</label>
-														<div class="col-7">
-															<input class="form-control m-input" type="text" value="www.facebook.com/Mark.Andre">
-														</div>
-													</div>
-													<div class="form-group m-form__group row">
-														<label for="example-text-input" class="col-2 col-form-label">
-															Twitter
-														</label>
-														<div class="col-7">
-															<input class="form-control m-input" type="text" value="www.twitter.com/Mark.Andre">
-														</div>
-													</div>
-													<div class="form-group m-form__group row">
-														<label for="example-text-input" class="col-2 col-form-label">
-															Instagram
-														</label>
-														<div class="col-7">
-															<input class="form-control m-input" type="text" value="www.instagram.com/Mark.Andre">
+															<input class="form-control m-input" type="text" >
 														</div>
 													</div>
 												</div>
@@ -423,7 +375,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="row">
 															<div class="col-2"></div>
 															<div class="col-7">
-																<button type="reset" class="btn btn-accent m-btn m-btn--air m-btn--custom">
+																<button type="submit" class="btn btn-accent m-btn m-btn--air m-btn--custom">
 																	Save changes
 																</button>
 																&nbsp;&nbsp;

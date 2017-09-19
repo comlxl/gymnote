@@ -4,7 +4,7 @@
      
  <mapper namespace="com.mycom.gymnote.config.MyGym"> 
  	<insert id="uinsert" parameterType="gdto">
- 		insert into gymnote_users values(#{email},#{fullname},#{password})
+ 		insert into gymnote_users (num,email,fullname,password) values(gymnote_users_seq.nextval,#{email},#{fullname},#{password})
  	</insert>
  	
  	<insert id="fbinsert" parameterType="fdto">
@@ -13,6 +13,10 @@
  	
  	<select id="uLogin" parameterType="String" resultType="String">
  		select password from gymnote_users where email=#{email}
+ 	</select>
+ 	
+ 	<select id="uLoginnum" parameterType="String" resultType="int">
+ 		select num from gymnote_users where email=#{email}
  	</select>
  	
  </mapper>

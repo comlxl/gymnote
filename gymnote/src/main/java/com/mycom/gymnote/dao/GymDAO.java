@@ -33,4 +33,10 @@ public class GymDAO {
 		SqlSession session=sqlMapper.openSession(ExecutorType.REUSE);
 		return session.selectOne(sqlid, email);
 	}
+	
+	//로그인 너버값들고오기
+	public int uLoginnum(String sqlid,String email){
+		SqlSession session=sqlMapper.openSession(ExecutorType.REUSE);
+		return session.selectOne(sqlid, email);
+	}
 }
