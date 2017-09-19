@@ -19,4 +19,8 @@
  		select num from gymnote_users where email=#{email}
  	</select>
  	
+ 	<select id="uProfile" parameterType="int" resultType="gdto">
+ 		select * from gymnote_users where num=#{num}
+ 	</select>
+ 	
  </mapper>

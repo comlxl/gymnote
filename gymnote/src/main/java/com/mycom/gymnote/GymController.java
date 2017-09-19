@@ -41,10 +41,6 @@ public class GymController {
 	public String uLogin(Model model,String email,String password){
 		String pwd=uservice.uLogin(email);
 		
-		int num=uservice.uLoginnum(email);
-		
-		model.addAttribute("num",num);
-		
 		String flag="false";
 		
 		if(password.equals(pwd)){
@@ -55,7 +51,11 @@ public class GymController {
 	
 	//홈
 	@RequestMapping("index")
-	public void index(){		
+	public void index(Model model,String email){
+		int num=uservice.uLoginnum(email);
+		
+		model.addAttribute("num",num);
+		
 	}
 	
 	//운동차트
@@ -85,7 +85,9 @@ public class GymController {
 	
 	//프로필
 	@RequestMapping("profile")
-	public void profile(){		
+	public void profile(int num,Model model){
+		GymDTO userProfile=uservice.uProfile(num);
+		model.addAttribute("userProfile", userProfile);
 	}
 	
 	//게시판 글쓰기

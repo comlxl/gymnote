@@ -90,11 +90,9 @@ var SnippetLogin = function() {
                 type:"post",
             	url: 'userLogin',
             	data:{},
-                success: function(data) { //뭐야 js에서 이거 어떻게 넘길까...
+                success: function(data) { //뭐야 js에서 이거 어떻게 기본키 넘길까... ${} 문법 안먹음
                 	if(data=="true"){
-                		alert("123");
-                		alert("${num}");
-                		location.href="index?num="+${num};
+                		location.href="index?email="+$('#email').val();
                 	}
                 	// similate 2s delay
                 	setTimeout(function() {

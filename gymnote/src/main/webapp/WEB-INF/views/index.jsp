@@ -47,7 +47,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<div class="m-grid m-grid--hor m-grid--root m-page">
 			<!-- BEGIN: Header -->
 			<header class="m-grid__item    m-header "  data-minimize-mobile="hide" data-minimize-offset="200" data-minimize-mobile-offset="200" data-minimize="minimize" >
-				<jsp:include page="Front/headBar.jsp" flush="false"/>
+				<jsp:include page="Front/headBar.jsp?num=${num }" flush="false"/>
 			</header>
 			<!-- END: Header -->
 			<!-- begin::Body -->

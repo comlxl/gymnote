@@ -39,4 +39,10 @@ public class GymDAO {
 		SqlSession session=sqlMapper.openSession(ExecutorType.REUSE);
 		return session.selectOne(sqlid, email);
 	}
+	
+	//유저 프로필정보 뿌리기
+	public GymDTO uProfile(String sqlid,int num){
+		SqlSession session=sqlMapper.openSession(ExecutorType.REUSE);		
+		return session.selectOne(sqlid, num);
+	}
 }

@@ -33,4 +33,10 @@ public class GymService {
 	public void fbinsert(FreeBoardDTO fdto){
 		dao.fbinsert("fbinsert",fdto);
 	}
+	
+	//프로필 뿌리기
+	public GymDTO uProfile(int num){
+		return dao.uProfile("uProfile",num);
+	}
+	
 }

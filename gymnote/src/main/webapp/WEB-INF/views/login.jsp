@@ -194,7 +194,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<script src="resources/assets/demo/default/base/scripts.bundle.js" type="text/javascript"></script>
 		<!--end::Base Scripts -->
 		<!--begin::Page Snippets -->
-		<script src="resources/assets/snippets/pages/user/login.js" type="text/javascript"></script>
+		<script src="resources/assets/snippets/pages/user/login.js?ver=1" type="text/javascript"></script>
 		<!--end::Page Snippets -->
 	</body>
 	<!-- end::Body -->

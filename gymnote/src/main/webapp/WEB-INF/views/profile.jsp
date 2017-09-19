@@ -318,7 +318,7 @@ License: You must have a valid license purchased only from themeforest(the above
 															¿Ã∏ß
 														</label>
 														<div class="col-7">
-															<input class="form-control m-input" type="text" value="Mark Andre">
+															<input class="form-control m-input" type="text" value="${userProfile.fullname}">
 														</div>
 													</div>
 													<div class="form-group m-form__group row">
