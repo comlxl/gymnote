@@ -299,7 +299,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 									<div class="tab-content">
 										<div class="tab-pane active" id="m_user_profile_tab_1">
-											<form class="m-form m-form--fit m-form--label-align-right" action="userprofile">
+											<form class="m-form m-form--fit m-form--label-align-right" action="userProfile?num=${userProfile.num }" method="post">
 												<div class="m-portlet__body">
 													<div class="form-group m-form__group m--margin-top-10 m--hide">
 														<div class="alert m-alert m-alert--default" role="alert">
@@ -315,10 +315,10 @@ License: You must have a valid license purchased only from themeforest(the above
 													</div>
 													<div class="form-group m-form__group row">
 														<label for="example-text-input" class="col-2 col-form-label">
-															이름
+															이름 
 														</label>
 														<div class="col-7">
-															<input class="form-control m-input" type="text" value="${userProfile.fullname}">
+															<input class="form-control m-input" type="text" value="${userProfile.fullname}" id="fullname" name="fullname" >
 														</div>
 													</div>
 													<div class="form-group m-form__group row">
@@ -326,7 +326,7 @@ License: You must have a valid license purchased only from themeforest(the above
 															직업
 														</label>
 														<div class="col-7">
-															<input class="form-control m-input" type="text" value="" placeholder="직업을 입력해주세요">
+															<input class="form-control m-input" type="text" value="${userProfile.job}" placeholder="직업을 입력해주세요" id="job" name="job">
 														</div>
 													</div>
 													<div class="form-group m-form__group row">
@@ -334,7 +334,7 @@ License: You must have a valid license purchased only from themeforest(the above
 															번호
 														</label>
 														<div class="col-7">
-															<input class="form-control m-input" type="text" value="" placeholder="휴대폰 번호를 입력해주세요">
+															<input class="form-control m-input" type="text" value="${userProfile.phone }" placeholder="휴대폰 번호를 입력해주세요" id="phone" name="phone">
 														</div>
 													</div>
 													<div class="m-form__seperator m-form__seperator--dashed m-form__seperator--space-2x"></div>
@@ -358,7 +358,7 @@ License: You must have a valid license purchased only from themeforest(the above
 															상세주소
 														</label>
 														<div class="col-7">
-															<input class="form-control m-input" type="text" >
+															<input class="form-control m-input" type="text" value="${userProfile.address }" id="address" name="address">
 														</div>
 													</div>
 													<div class="form-group m-form__group row">

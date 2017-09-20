@@ -23,4 +23,8 @@
  		select * from gymnote_users where num=#{num}
  	</select>
  	
+ 	<update id="uProfile_update" parameterType="gdto">
+ 		update gymnote_users set job=#{job},phone=#{phone},address=#{address} where num=#{num} 	
+ 	</update>
+ 	
  </mapper>

@@ -39,4 +39,9 @@ public class GymService {
 		return dao.uProfile("uProfile",num);
 	}
 	
+	//프로필 업데이트
+	public void uProfileUpdate(GymDTO gdto){
+		dao.uProfile_update("uProfile_update",gdto);
+	}
+	
 }

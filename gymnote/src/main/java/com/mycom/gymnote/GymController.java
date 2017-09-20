@@ -54,8 +54,7 @@ public class GymController {
 	public void index(Model model,String email){
 		int num=uservice.uLoginnum(email);
 		
-		model.addAttribute("num",num);
-		
+		model.addAttribute("num",num);		
 	}
 	
 	//운동차트
@@ -90,10 +89,19 @@ public class GymController {
 		model.addAttribute("userProfile", userProfile);
 	}
 	
+	//프로필 업데이트
+	@RequestMapping(value="userProfile", method=RequestMethod.POST)
+	public String profile(GymDTO gdto){
+		uservice.uProfileUpdate(gdto);
+		return "redirect:profile?num="+gdto.getNum();
+	}
+	
 	//게시판 글쓰기
 	@RequestMapping(value="insert_freeboard", method=RequestMethod.POST)
 	public String fbinsert(FreeBoardDTO fdto){
 		uservice.fbinsert(fdto);		
 		return "board";
 	}
+	
+	
 }
