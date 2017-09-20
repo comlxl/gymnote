@@ -51,10 +51,10 @@ public class GymController {
 	
 	//홈
 	@RequestMapping("index")
-	public void index(Model model,String email){
-		int num=uservice.uLoginnum(email);
-		
-		model.addAttribute("num",num);		
+	public String index(Model model,String email){
+		int num=uservice.uLoginnum(email);		
+		model.addAttribute("num",num);
+		return "index";
 	}
 	
 	//운동차트
